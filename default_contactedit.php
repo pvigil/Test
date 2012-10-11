@@ -1,10 +1,10 @@
 <?php
 /**
- * @package		Joomla.Site
- * @subpackage	com_users
- * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
- * @since		1.6
+ * @version     1.0.0
+ * @package     com_myaccount
+ * @copyright   Copyright (C) 2012. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Pablo Vigil <pablo.vigil@modelitsoftware.com> - http://www.modelitsoftware.com
  */
 
 defined('_JEXEC') or die;
@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
 	<form id="contactForm" action="post" class="form-validate">
 		<?php foreach ($this->form->getFieldset('edit') as $field): 
 			if (!$field->hidden) :?>					
-					<li <?php echo ($field->title == 'Type') ? 'class="float-left"' : '' ?>><span class="contact-label edit"><?php echo $field->label; ?></span> <?php echo $field->input; ?></li>
+				<li <?php echo ($field->title == 'Type') ? 'class="float-left"' : '' ?>><span class="contact-label edit"><?php echo $field->label; ?></span> <?php echo $field->input; ?></li>
 			<?php else: ?>
             	<?php echo $field->input; ?>
 			<?php endif; ?>
