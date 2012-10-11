@@ -27,4 +27,3 @@ defined('_JEXEC') or die;
 		<?php echo JHtml::_("form.token"); ?>
 	</form>
 </ul>
-		
